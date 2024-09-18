@@ -21,15 +21,23 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg sticky-top">
+<nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Elfonze Technologies</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="mx-auto">
             <h6 class="mb-0 text-center">Prompt Builder</h6>
         </div>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <!-- FAQ Button to Trigger Modal -->
@@ -51,7 +59,7 @@
         <div class="col-lg-6 col-md-12">
             <form id="prompt-form" class="mb-4">
                 <div class="mb-3">
-                    <label for="role" class="form-label">Role
+                    <label for="role" class="form-label">Act as
                         <span tabindex="0" data-bs-toggle="tooltip" title="Examples: Java Architect, Project Manager, or any other expert">
                             <i class="bi bi-question-circle"></i>
                         </span>
@@ -69,7 +77,7 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="task" class="form-label">Task
+                    <label for="task" class="form-label">Explain what you need from GPT
                         <span tabindex="0" data-bs-toggle="tooltip" title="Examples: Write a server, Design a microservice">
                             <i class="bi bi-question-circle"></i>
                         </span>
@@ -102,13 +110,13 @@
                         </span>
                     </label>
                     <select id="tone" class="form-select dark-mode" required>
-                        <option value="" disabled selected>Select tone</option>
+                        <option value="" disabled>Select tone</option>
                         <option value="Formal">Formal</option>
                         <option value="Informal">Informal</option>
                         <option value="Casual">Casual</option>
                         <option value="Conversational">Conversational</option>
                         <option value="Persuasive">Persuasive</option>
-                        <option value="Professional">Professional</option>
+                        <option value="Professional" selected>Professional</option>
                         <option value="Friendly">Friendly</option>
                         <option value="Serious">Serious</option>
                         <option value="Humorous">Humorous</option>
